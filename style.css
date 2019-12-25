@@ -61,8 +61,8 @@ body {
     height: 100vh;
 }
 
-.nav-item.active {
-    background-color: red;
+.nav-link.active {
+  
     color: white !important;
 }
 

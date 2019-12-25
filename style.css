@@ -1,0 +1,96 @@
+/* body {
+    background: url(./img/shutterstock_540376702.jpg) center center;
+    background-size: cover;
+}
+
+input {
+    width: 300px;
+    height: 30px;
+    border: 5px solid yellow;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+p {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 0;
+}
+
+form {
+    margin-right: 100px;
+    margin-top: 100px;
+    background: rgba(20, 20, 50, 0.3);
+    width: 30%;
+    border-radius: 15px;
+    text-align: center;
+}
+
+select {
+    width: 300px;
+    height: 30px;
+    border: 3px solid green;
+}
+
+button {
+    margin-top: 20px;
+    width: 300px;
+    height: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: lightgreen;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+
+button:hover {
+    background-color: green;
+}
+------------------------------------Register---------------------- */
+
+body {
+    background: url(./img/bg2.png) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.nav-item.active {
+    background-color: red;
+    color: white !important;
+}
+
+.nav-link {
+    color: black !important;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.dropdown-menu {
+    background: rgba(2, 22, 222, 0.1)
+}
+
+.parts {
+    text-align: center;
+    /* margin-top: 200px; */
+}
+
+.parts button {
+    width: 400px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: normal;
+    color: black;
+    padding: 5px;
+}
+
+.alert {
+    margin-top: 100px;
+    font-size: 30px;
+}

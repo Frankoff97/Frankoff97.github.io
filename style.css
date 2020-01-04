@@ -1,69 +1,13 @@
-/* body {
-    background: url(./img/shutterstock_540376702.jpg) center center;
-    background-size: cover;
-}
+/*------------------------------------header---------------------- */
 
-input {
-    width: 300px;
-    height: 30px;
-    border: 5px solid yellow;
-}
-
-.container {
-    width: 1200px;
-    margin: auto;
-    text-align: center;
-    display: flex;
-    justify-content: flex-end;
-}
-
-p {
-    font-size: 25px;
-    font-weight: bold;
-    color: white;
-    margin-bottom: 0;
-}
-
-form {
-    margin-right: 100px;
-    margin-top: 100px;
-    background: rgba(20, 20, 50, 0.3);
-    width: 30%;
-    border-radius: 15px;
-    text-align: center;
-}
-
-select {
-    width: 300px;
-    height: 30px;
-    border: 3px solid green;
-}
-
-button {
-    margin-top: 20px;
-    width: 300px;
-    height: 30px;
-    font-weight: bold;
-    font-size: 20px;
-    background-color: lightgreen;
-    margin-bottom: 15px;
-    border-radius: 15px;
-}
-
-button:hover {
-    background-color: green;
-}
-------------------------------------Register---------------------- */
-
-body {
+header {
     background: url(./img/bg2.png) no-repeat center center;
     background-size: cover;
     height: 100vh;
 }
 
 .nav-link.active {
-  
-    color: white !important;
+    color: red !important;
 }
 
 .nav-link {
@@ -78,7 +22,6 @@ body {
 
 .parts {
     text-align: center;
-    /* margin-top: 200px; */
 }
 
 .parts button {
@@ -94,3 +37,667 @@ body {
     margin-top: 100px;
     font-size: 30px;
 }
+
+@media(max-width:500px) {
+    .parts button {
+        width: 300px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-weight: normal;
+        color: black;
+        padding: 5px;
+    }
+    .alert {
+        margin-top: 100px;
+        font-size: 20px;
+    }
+}
+
+
+/*---------------end of header --------------------*/
+
+
+/*---------------section enter--------------------*/
+
+.enter {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.login {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    z-index: 1;
+}
+
+.login::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #005bea;
+    opacity: 0.7;
+}
+
+.form_table {
+    width: 390px;
+    background: transparent;
+    margin: auto;
+}
+
+.enter form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 10px auto;
+}
+
+.img img {
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+.title img {
+    width: 100px;
+    height: 50px;
+}
+
+@media(max-width:500px) {
+    .form_table {
+        width: 300px;
+    }
+}
+
+
+/*---------------------------enter-----------------------------*/
+
+
+/*-------------------------USername_Password-------------------------*/
+
+.username-password {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    margin: 10px auto;
+}
+
+.username-password input {
+    font-size: 15px;
+    line-height: 1.2;
+    color: #333333;
+    display: block;
+    width: 100%;
+    background: #fff;
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 30px 0 53px;
+    border: none;
+}
+
+.focus {
+    display: block;
+    position: absolute;
+    border-radius: 25px;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 0px 0px;
+    color: rgba(0, 91, 234, 0.6);
+}
+
+.symbol {
+    font-size: 15px;
+    color: #999999;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    border-radius: 25px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 30px;
+    pointer-events: none;
+    transition: all 0.4s;
+}
+
+.username-password input:focus+.focus+.symbol {
+    color: #00c6fb;
+    padding-left: 23px;
+}
+
+
+/*----------------------------USername_Password-----------------------*/
+
+
+/*-------------------------Button-------------------------------------*/
+
+.sign {
+    width: 100%;
+    text-align: center;
+}
+
+.sign button {
+    width: 50%;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #e0e0e0;
+    text-align: center;
+    height: 50px;
+    padding: 0 25px;
+    margin-bottom: 50px;
+}
+
+
+/*-------------------------endof Button--------------------------------*/
+
+
+/*-------------------------Forgot-Create------------------------------*/
+
+.enter a {
+    color: #fff;
+}
+
+.enter a:hover {
+    color: black;
+}
+
+
+/*-------------------------Forgot-Create------------------------------*/
+
+
+/*-------------------------Section__Enter_end-------------------------*/
+
+
+/*--------------------------Section_Registration----------------------*/
+
+.registration {
+    background: #005bea;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+.registration::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: #005bea;
+    width: 100%;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.form_regis {
+    width: 500px;
+    margin: auto;
+}
+
+.reg_box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.reg_title {
+    width: 100%;
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.reg_img_bg {
+    margin-bottom: 15px;
+    display: flex;
+}
+
+.reg_img_bg img {
+    width: 200px;
+    height: 100px;
+    margin-left: 25px;
+}
+
+.reg_img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #fff;
+    margin: 15px 75px;
+    padding-top: 25px;
+    border: 1px solid black;
+}
+
+.registration hr {
+    border: 4px solid black;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.reg_name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    margin-left: 20px;
+}
+
+.reg_name input {
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 80px;
+    background: #d1c5c5;
+    font-size: 10px;
+    width: 200px;
+    margin-bottom: 15px;
+}
+
+.reg_way {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    margin-left: 20px;
+}
+
+.select {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.reg_way select {
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background: #d1c5c5;
+    font-size: 10px;
+    width: 120px;
+    margin-left: 10px;
+}
+
+.reg_box button {
+    width: 150px;
+    background: #e21754;
+    color: white;
+    margin-left: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+@media(max-width:550px) {
+    .form_regis {
+        width: 400px;
+        margin: auto;
+    }
+    .reg_img_bg {
+        align-items: center;
+        margin-bottom: 0;
+        justify-content: center;
+    }
+    .reg_img_bg img {
+        width: 100px;
+        height: 50px;
+        margin-left: 25px;
+    }
+    .reg_img {
+        width: 70px;
+        height: 70px;
+        font-size: 12px;
+        margin-right: 0;
+        padding: 10px;
+    }
+    .reg_name input {
+        height: 38px;
+        margin-right: 20px;
+        width: 120px;
+        margin-bottom: 15px;
+    }
+    .reg_way {
+        display: block;
+    }
+}
+
+@media(max-width:450px) {
+    .form_regis {
+        width: 300px;
+        margin: auto;
+    }
+    .reg_img_bg {
+        align-items: center;
+        margin-bottom: 0;
+    }
+    .reg_img_bg img {
+        width: 100px;
+        height: 50px;
+        margin-left: 25px;
+    }
+    .reg_img {
+        width: 70px;
+        height: 70px;
+        font-size: 12px;
+        margin-right: 0;
+        padding: 10px;
+    }
+    .reg_name input {
+        height: 38px;
+        margin-right: 20px;
+        width: 120px;
+        margin-bottom: 15px;
+    }
+    .reg_way {
+        display: block;
+    }
+}
+
+
+/*--------------------------endof_Section_Registration----------------------*/
+
+
+/*--------------------------Section_part-Driver----------------------------*/
+
+.part_driver {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    /* background: #005bea;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1; */
+}
+
+
+/* .part_driver::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: #005bea;
+    width: 100%;
+    opacity: 0.8;
+    z-index: -1;
+} */
+
+.part_driver .write {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    align-items: center;
+}
+
+.part_driver .people {
+    display: flex;
+}
+
+.people input {
+    width: 70px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.click {
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+.click a {
+    display: block;
+}
+
+.people span {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.person_price {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+
+.person_price p:first-child {
+    color: red;
+}
+
+.person_price input {
+    width: 150px;
+    height: 50px;
+    margin-left: 20px;
+    margin-right: 5px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.show_way .place {
+    background: #5cd151;
+    padding: 10px 50px;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 3px 2px;
+}
+
+.map {
+    border: 1px solid black;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    font-size: 100px;
+    text-align: center;
+}
+
+@media(max-width:1200px) {
+    .part_driver .write {
+        display: block;
+        margin-top: 60px;
+    }
+    .part_driver .people {
+        justify-content: center;
+    }
+    .people input {
+        width: 80px;
+        font-size: 40px;
+    }
+    .person_price {
+        font-size: 35px;
+        margin-top: 15px;
+        justify-content: center;
+    }
+    .person_price input {
+        width: 200px;
+        height: 50px;
+        font-size: 40px;
+    }
+    .map {
+        height: 200px;
+        font-size: 50px;
+    }
+}
+
+@media(max-width:800px) {
+    .part_driver .write {
+        display: block;
+        margin-top: 60px;
+    }
+    .part_driver .people {
+        justify-content: center;
+    }
+    .people input {
+        width: 50px;
+        font-size: 20px;
+    }
+    .person_price {
+        font-size: 20px;
+        margin-top: 15px;
+        justify-content: center;
+    }
+    .person_price input {
+        width: 150px;
+        height: 35px;
+        font-size: 25px;
+    }
+    .map {
+        height: 200px;
+        font-size: 50px;
+    }
+}
+
+
+/*------------------------end-of-Section_part-Drivers----------------------------*/
+
+
+/*-------------------Haydovchi qimsi yakunlandi-----------------------------------*/
+
+
+/*--------------------Foydalanuvchi qismi   ----------------------------------------*/
+
+
+/*--------------------user_choice---------------------------------------------------*/
+
+.user_choice {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: rgb(212, 245, 137);
+}
+
+.user_choice form {
+    width: 520px;
+    margin: auto;
+    text-align: center;
+}
+
+.address {
+    margin-bottom: 20px;
+}
+
+.address p {
+    font-weight: bold;
+    font-size: 20px;
+    color: #eb6ff7;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.address select {
+    width: 300px;
+    height: 50px;
+    border: none;
+    background: rgb(166, 244, 247);
+}
+
+.apply button {
+    width: 50%;
+    background: #e21754;
+}
+
+@media(max-width:500px) {
+    .user_choice form {
+        width: 300px;
+    }
+    .address p {
+        font-weight: bold;
+        font-size: 15px;
+        color: #eb6ff7;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    .address select {
+        width: 250px;
+        height: 30px;
+    }
+}
+
+
+/*--------------------user_choice--end-------------------------------------------------*/
+
+
+/*--------------------part_user--------------------------------------------------------*/
+
+.part_user {
+    height: 100vh;
+}
+
+ol:first-child {
+    list-style: none;
+}
+
+.column {
+    background: rgb(38, 15, 241);
+    color: white;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 0;
+    height: 50px;
+}
+
+.col-info {
+    border: 3px solid black;
+    border-radius: 5px;
+    height: 30px;
+    background: rgb(205, 245, 61);
+}
+
+.col-info button {
+    background: #e21754;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+/*--------------------part_user--end----------------------------------------------------*/
+
+
+/*--------------------Foydalanuvchi qismi yakunlandi--------------------------------------*/

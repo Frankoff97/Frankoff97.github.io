@@ -12,59 +12,449 @@
 </head>
 
 <body>
-    <div class="container">
-  <nav class="navbar navbar-expand-lg navbar-light ">
-            <a class="navbar-brand" href="#"><img src="/img/logo.jpg" alt=""></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#"> Главная <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Оплата</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">О нас</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Контакты</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img src="./img/flag_ru.jpg " width="25px" height="15px" alt=""> Ru
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#"> <img src="./img/flag_uz.GIF " width="25px" height="15px" alt=""> Uz</a>
-                            <a class="dropdown-item" href="#"> <img src="./img/flag_eng.png " width="25px" height="15px" alt=""> En</a>
 
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <a class="navbar-brand" href="#"><img src="/img/logo.jpg" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#"> Главная <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Оплата</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">О нас</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="./img/flag_ru.jpg " width="25px" height="15px" alt=""> Ru
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#"> <img src="./img/flag_uz.GIF " width="25px" height="15px" alt=""> Uz</a>
+                                <a class="dropdown-item" href="#"> <img src="./img/flag_eng.png " width="25px" height="15px" alt=""> En</a>
+
+                            </div>
+                        </li>
+
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0 search d-none d-md-block">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Искать" aria-label="Search">
+                        <button class="btn btn-success my-2 my-sm-0" type="submit">Найти</button>
+                    </form>
+                </div>
+            </nav>
+            <div class="alert">
+                Выберите вашу категорию:
+            </div>
+            <div class="parts">
+                <div class="driver"> <button class="btn btn-danger"> Водитель</button>
+                </div>
+                <div class="passer"> <button class="btn btn-primary"> Клиент</button>
+                </div>
+                <div class="sending"> <button class="btn btn-success"> Посылка</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Haydovchi_qismi -->
+    <section class="enter" style="background-image: url('/img/login_bg.jpg');">
+        <div class="login">
+            <div class="container">
+                <div class="form_table">
+                    <form action="">
+                        <div class="img">
+                            <img src="/img/login_driver.jpg" alt="">
                         </div>
-                    </li>
+                        <span class="title"> <img src="/img/login_title.png" alt=""> </span>
+                        <div class="username-password">
+                            <input type="text" name="username" placeholder="Номер телефона или машины">
+                            <span class="focus"></span>
+                            <span class="symbol"> <i class="fa fa-user"></i> </span>
+                        </div>
+                        <div class="username-password">
+                            <input type="password" name="pass" placeholder="Пароль">
+                            <span class="focus"></span>
+                            <span class="symbol"><i class="fa fa-lock"></i></span>
+                        </div>
+                        <div class="sign"><button class="btn btn-success">Войти</button></div>
+                        <div class="forgot">
+                            <a href="#">
+                                Забыли Пароль?
+                            </a>
+                        </div>
+                        <div class="create_account">
+                            <a href="#">Создать новый аккаунт <i class="fa fa-long-arrow-right"></i> </a>
+                        </div>
 
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Искать" aria-label="Search">
-                    <button class="btn btn-success my-2 my-sm-0" type="submit">Найти</button>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="registration" style="background-image: url('/img/regis_bg.jpg');">
+        <div class="container">
+            <div class="form_regis">
+                <form action="">
+                    <div class="reg_box">
+                        <div class="reg_title">
+                            Регистрационная форма водителя
+                        </div>
+                        <div class="reg_img_bg">
+                            <img src="/img/add_img_bg.jpg" alt="">
+                            <div class="reg_img"><a href="#"> Добавить фото </a></div>
+                        </div>
+                        <hr>
+                        <div class="reg_name">
+                            <span> Имя</span> <input type="text" placeholder="Salim">
+                        </div>
+                        <div class="reg_name">
+                            <span>Пароль</span> <input type="password" placeholder="не менее чем 6 cимволов">
+                        </div>
+                        <div class="reg_name">
+                            <span> Номер машины</span> <input type="text" placeholder="10J207PA">
+                        </div>
+                        <div class="reg_name">
+                            <span> Модел</span> <input type="text" placeholder="Nexia3">
+                        </div>
+                        <div class="reg_name">
+                            <span> Телефон</span> <input type="text" placeholder="+99890 999 99 99">
+                        </div>
+                        <div class="reg_way">
+                            <span> Направление </span>
+                            <div class="select">
+                                <select name="" id="first">
+                                    <option value="Toshkent">Toshkent</option>
+                                    <option value="Navoiy">Navoiy</option>
+                                    <option value="Qashqadaryo">Qashqadaryo</option>
+                                    <option value="Samarqand">Samarqand</option>
+                                    <option value="Fargona">Fargona</option>
+                                    <option value="Buxoro">Buxoro</option>
+                                    <option value="Namangan">Namangan</option>
+                                    <option value="Andijon">Andijon</option>
+                                </select>
+                                <select name="" id="first">
+                                    <option value="Navoiy">Navoiy</option>
+                                    <option value="Toshkent">Toshkent</option>
+                                    <option value="Qashqadaryo">Qashqadaryo</option>
+                                    <option value="Samarqand">Samarqand</option>
+                                    <option value="Fargona">Fargona</option>
+                                    <option value="Buxoro">Buxoro</option>
+                                    <option value="Namangan">Namangan</option>
+                                    <option value="Andijon">Andijon</option>
+                                </select>
+
+                            </div>
+                        </div>
+                        <button type="submit">Потверждать</button>
+                    </div>
+
                 </form>
             </div>
-        </nav>
-     <div class="alert">
-            Выберите вашу категорию:
         </div>
-        <div class="parts">
-            <div class="driver"> <button class="btn btn-danger"> Водитель</button>
+    </section>
+    <section class="part_driver">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <a class="navbar-brand" href="#"><img src="/img/logo.jpg" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#"> Главная <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Редактирование данных</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Выход<i class="fa fa-user"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="write">
+                <div class="people">
+                    <div class="busy">
+                        <input type="text" value="0">
+                    </div>
+                    <div class="click">
+                        <a href="#"><i class="fa fa-user"></i></a>
+                        <a href="#"><i class="fa fa-clock"></i></a>
+                    </div>
+                    <span>Чел./ от</span>
+                    <div class="total">
+                        <input type="text" value="4" disabled>
+                    </div>
+                </div>
+                <div class="price">
+                    <div class="person_price">
+                        <p>Сумма поездки</p> <input type="text" placeholder="0">
+                        <p>сумм</p>
+                    </div>
+                    <div class="person_price post">
+                        <p>Сумма посылки</p> <input type="text" placeholder="0">
+                        <p>сумм</p>
+                    </div>
+                </div>
+                <div class="show_way text-center">
+                    <p>
+                        <h3>Направление</h3>
+                    </p>
+                    <div class="place">Toshkent</div>
+                    <div class="place">Qashqadaryo-Qarshi</div>
+
+
+                </div>
             </div>
-            <div class="passer"> <button class="btn btn-primary"> Клиент</button>
-            </div>
-            <div class="sending"> <button class="btn btn-success"> Посылка</button>
+            <div class="map">
+                Karta uchun joy
             </div>
         </div>
-    </div>
-     <script src="/bootstrap-4.4.1-dist/js/jquery.js"></script>
+
+    </section>
+    <!-- Haydovchi qismi_yakunlandi-->
+    <!-- Foydalanuvchi_qismi-->
+    <section class="user_choice">
+        <div class="container">
+            <form action="">
+                <div class="box">
+                    <div class="address">
+                        <p>Адрес где вы сейчас находитесь</p>
+                        <select name="" id="">
+                            <option value="Toshkent">Toshkent</option>
+                            <option value="Navoiy">Navoiy</option>
+                            <option value="Qashqadaryo">Qashqadaryo</option>
+                            <option value="Samarqand">Samarqand</option>
+                            <option value="Fargona">Fargona</option>
+                            <option value="Buxoro">Buxoro</option>
+                            <option value="Namangan">Namangan</option>
+                            <option value="Andijon">Andijon</option>
+                        </select>
+                    </div>
+                    <div class="address">
+                        <p>Адрес направление</p>
+                        <select name="" id="">
+                            <option value="Qashqadaryo">Qashqadaryo</option>
+                            <option value="Navoiy">Navoiy</option>
+                            <option value="Qashqadaryo">Qashqadaryo</option>
+                            <option value="Samarqand">Samarqand</option>
+                            <option value="Fargona">Fargona</option>
+                            <option value="Buxoro">Buxoro</option>
+                            <option value="Namangan">Namangan</option>
+                            <option value="Andijon">Andijon</option>
+                        </select>
+                    </div>
+                    <div class="address">
+                        <p>Адрес регина/города направлении</p>
+                        <select name="Qashqadaryo" id="">
+                            <option value="Qarshi">Qarshi</option>
+                            <option value="Navoiy">Navoiy</option>
+                            <option value="Qashqadaryo">Qashqadaryo</option>
+                            <option value="Samarqand">Samarqand</option>
+                            <option value="Fargona">Fargona</option>
+                            <option value="Buxoro">Buxoro</option>
+                            <option value="Namangan">Namangan</option>
+                            <option value="Andijon">Andijon</option>
+                        </select>
+                        <select name="Farg'ona" id="" class="d-none">
+                            <option value="Qarshi">Qarshi</option>
+                            <option value="Navoiy">Navoiy</option>
+                            <option value="Qashqadaryo">Qashqadaryo</option>
+                            <option value="Samarqand">Samarqand</option>
+                            <option value="Fargona">Fargona</option>
+                            <option value="Buxoro">Buxoro</option>
+                            <option value="Namangan">Namangan</option>
+                            <option value="Andijon">Andijon</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="apply"><button class="btn btn-success">OK</button></div>
+            </form>
+        </div>
+    </section>
+    <section class="part_user">
+        <div class="container">
+            <ol>
+                <li>
+                    <div class="table">
+                        <div class="row text-center w-100 m-auto ">
+                            <div class="col-3 p-0">
+                                <div class="column">
+                                    Модел/номер
+                                </div>
+                            </div>
+                            <div class="col-2 p-0 ">
+                                <div class="column">
+                                    Цена
+                                </div>
+                            </div>
+                            <div class="col-1 p-0">
+                                <div class="column">
+                                    Занято
+                                </div>
+                            </div>
+                            <div class="col-1 p-0">
+                                <div class="column">
+                                    Имя
+                                </div>
+                            </div>
+                            <div class="col-3 p-0">
+                                <div class="column">
+                                    Тел.номер
+                                </div>
+                            </div>
+                            <div class="col-2 p-0">
+                                <div class="column">
+                                    Место нахождение
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+            </ol>
+            <ol>
+                <li>
+                    <div class="table">
+                        <div class="row text-center w-100 m-auto ">
+                            <div class="col-lg-3 p-0">
+                                <div class="col-info">
+                                    Nexia- 50A000AA
+                                </div>
+                            </div>
+                            <div class="col-lg-2 p-0 ">
+                                <div class="col-info">
+                                    45000
+                                </div>
+                            </div>
+                            <div class="col-lg-1 p-0">
+                                <div class="col-info">
+                                    3/4
+                                </div>
+                            </div>
+                            <div class="col-lg-1 p-0">
+                                <div class="col-info">
+                                    Salim
+                                </div>
+                            </div>
+                            <div class="col-lg-3 p-0">
+                                <div class="col-info">
+                                    +9999 000 00 00
+                                </div>
+                            </div>
+                            <div class="col-lg-2 p-0">
+                                <div class="col-info">
+                                    <button>
+                                        Определить
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+                <li>
+                    <div class="table">
+                        <div class="row text-center w-100 m-auto ">
+                            <div class="col-lg-3 p-0">
+                                <div class="col-info">
+                                    Nexia- 50A000AA
+                                </div>
+                            </div>
+                            <div class="col-lg-2 p-0 ">
+                                <div class="col-info">
+                                    45000
+                                </div>
+                            </div>
+                            <div class="col-lg-1 p-0">
+                                <div class="col-info">
+                                    3/4
+                                </div>
+                            </div>
+                            <div class="col-lg-1 p-0">
+                                <div class="col-info">
+                                    Salim
+                                </div>
+                            </div>
+                            <div class="col-lg-3 p-0">
+                                <div class="col-info">
+                                    +9999 000 00 00
+                                </div>
+                            </div>
+                            <div class="col-lg-2 p-0">
+                                <div class="col-info">
+                                    <button>
+                                        Определить
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+                <li>
+                    <div class="table">
+                        <div class="row text-center w-100 m-auto ">
+                            <div class="col-lg-3 p-0">
+                                <div class="col-info">
+                                    Nexia- 50A000AA
+                                </div>
+                            </div>
+                            <div class="col-lg-2 p-0 ">
+                                <div class="col-info">
+                                    45000
+                                </div>
+                            </div>
+                            <div class="col-lg-1 p-0">
+                                <div class="col-info">
+                                    3/4
+                                </div>
+                            </div>
+                            <div class="col-lg-1 p-0">
+                                <div class="col-info">
+                                    Salim
+                                </div>
+                            </div>
+                            <div class="col-lg-3 p-0">
+                                <div class="col-info">
+                                    +9999 000 00 00
+                                </div>
+                            </div>
+                            <div class="col-lg-2 p-0">
+                                <div class="col-info">
+                                    <button>
+                                        Определить
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+            </ol>
+
+        </div>
+    </section>
+    <section class="open_map"></section>
+    <!-- Foydalanuvchi_qismi- yakunlandi  -->
+
+
+    <script src="/bootstrap-4.4.1-dist/js/jquery.js"></script>
     <script src="/bootstrap-4.4.1-dist/js/bootstrap.js"></script>
     <script src="/bootstrap-4.4.1-dist/js/scripts.js"></script>
     <script type="text/javascript" src="https://spikmi.com/Widget?Id=2224"></script>
